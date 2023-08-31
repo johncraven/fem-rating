@@ -14,6 +14,7 @@ img {
 /* variables */
 :root {
     /* colors */
+    --primary: 25, 97%, 53%;
     --clr-primary: hsl(25, 97%, 53%);
     --clr-white: hsl(0, 0%, 100%);
     --clr-light-gray: hsl(217, 12%, 63%);
@@ -41,7 +42,6 @@ body {
     min-height: 100vh;
 
     display: flex;
-    direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -69,6 +69,8 @@ body {
 
 h1 {
     color: var(--clr-white);
+    line-height: 1;
+    padding-bottom: 0;
 }
 
 p {
@@ -95,20 +97,13 @@ fieldset {
 }
 
 label {
-
-
-    /* width: var(--circle-diameter);
-    height: var(--circle-diameter);
-    border-radius: var(--circle-diameter);
-    background-color: var(--clr-dark-gray); */
-    line-height: 1;
+    padding-top: 0.18em;
     color: var(--clr-medium-gray);
     font-size: var(--fs-500);
     vertical-align: middle;
 }
 
 input[type="radio"] {
-    /* display: none; */
     position: absolute;
     width: 1em;
     height: 1em;
@@ -158,10 +153,11 @@ button:active {
 /* thanks card */
 .selected-rating {
     background-color: var(--clr-dark-gray);
-    color: var(--clr-primary);
+    color: hsl(var(--primary), 60%);
     margin: auto;
-    padding: 7px;
+    padding: 10px;
     border-radius: 20px;
+    margin-bottom: 0.5rem;
 }
 
 /* utility */

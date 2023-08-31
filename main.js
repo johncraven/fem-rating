@@ -10,5 +10,3 @@ submitButton.addEventListener("click", () => {
     ratingCard.classList.add('hide');
     thanksCard.classList.remove('hide')
 })
-// ratingCard.classList.add('hide')
-// thanksCard.classList.remove('hide')
